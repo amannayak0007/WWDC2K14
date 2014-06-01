@@ -9,5 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface AmanViewController : UIViewController
+{
 
+NSDate *destinationDate;
+
+
+IBOutlet UILabel *countdownLabel;
+
+
+NSTimer *timer;
+}
+ -(void)updateLabel;
 @end

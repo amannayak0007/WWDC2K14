@@ -21,6 +21,9 @@
 		8888AA59193B560100501E0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8888AA3B193B560000501E0A /* UIKit.framework */; };
 		8888AA61193B560100501E0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8888AA5F193B560100501E0A /* InfoPlist.strings */; };
 		8888AA63193B560100501E0A /* WWDC2K14Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8888AA62193B560100501E0A /* WWDC2K14Tests.m */; };
+		8888AA6E193B564800501E0A /* WWDC2k14.png in Resources */ = {isa = PBXBuildFile; fileRef = 8888AA6C193B564800501E0A /* WWDC2k14.png */; };
+		8888AA6F193B564800501E0A /* WWDC2k14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8888AA6D193B564800501E0A /* WWDC2k14@2x.png */; };
+		8888AA72193B57C400501E0A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8888AA70193B57C400501E0A /* Main_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		8888AA5E193B560100501E0A /* WWDC2K14Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WWDC2K14Tests-Info.plist"; sourceTree = "<group>"; };
 		8888AA60193B560100501E0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8888AA62193B560100501E0A /* WWDC2K14Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDC2K14Tests.m; sourceTree = "<group>"; };
+		8888AA6C193B564800501E0A /* WWDC2k14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WWDC2k14.png; sourceTree = "<group>"; };
+		8888AA6D193B564800501E0A /* WWDC2k14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WWDC2k14@2x.png"; sourceTree = "<group>"; };
+		8888AA71193B57C400501E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +118,15 @@
 		8888AA3D193B560000501E0A /* WWDC2K14 */ = {
 			isa = PBXGroup;
 			children = (
+				8888AA75193B588500501E0A /* iPad */,
 				8888AA46193B560100501E0A /* AmanAppDelegate.h */,
 				8888AA47193B560100501E0A /* AmanAppDelegate.m */,
 				8888AA49193B560100501E0A /* Main.storyboard */,
 				8888AA4C193B560100501E0A /* AmanViewController.h */,
 				8888AA4D193B560100501E0A /* AmanViewController.m */,
 				8888AA4F193B560100501E0A /* Images.xcassets */,
+				8888AA6C193B564800501E0A /* WWDC2k14.png */,
+				8888AA6D193B564800501E0A /* WWDC2k14@2x.png */,
 				8888AA3E193B560100501E0A /* Supporting Files */,
 			);
 			path = WWDC2K14;
@@ -150,6 +159,14 @@
 				8888AA5F193B560100501E0A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8888AA75193B588500501E0A /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				8888AA70193B57C400501E0A /* Main_iPad.storyboard */,
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8888AA50193B560100501E0A /* Images.xcassets in Resources */,
+				8888AA6F193B564800501E0A /* WWDC2k14@2x.png in Resources */,
 				8888AA42193B560100501E0A /* InfoPlist.strings in Resources */,
+				8888AA72193B57C400501E0A /* Main_iPad.storyboard in Resources */,
+				8888AA6E193B564800501E0A /* WWDC2k14.png in Resources */,
 				8888AA4B193B560100501E0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +317,14 @@
 				8888AA60193B560100501E0A /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8888AA70193B57C400501E0A /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8888AA71193B57C400501E0A /* Base */,
+			);
+			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -382,7 +410,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWDC2K14/WWDC2K14-Prefix.pch";
 				INFOPLIST_FILE = "WWDC2K14/WWDC2K14-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,7 +425,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWDC2K14/WWDC2K14-Prefix.pch";
 				INFOPLIST_FILE = "WWDC2K14/WWDC2K14-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
